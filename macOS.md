@@ -576,6 +576,18 @@ exec zsh
 ```
 
 To check if this worked, run `python --version`. If you see `3.8.12`, perfect! If not, ask a TA that will help you debug the problem thanks to `pyenv versions` and `type -a python` (`python` should be using the `.pyenv/shims` version first).
+  
+If `python --version` gives you `zsh: command not found: python`, try the code below.
+  
+```bash
+eval "$(pyenv init --path)" >> ~/.zshrc
+```
+now try this again.
+  
+```bash
+pyenv global 3.8.12
+exec zsh
+```
 
 
 ## Python Virtual Environment
