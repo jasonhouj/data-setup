@@ -585,8 +585,7 @@ eval "$(pyenv init --path)" >> ~/.zshrc
 now try this again.
   
 ```bash
-pyenv global 3.8.12
-exec zsh
+python --version
 ```
 
 
